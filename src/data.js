@@ -17,6 +17,7 @@ import querycrud from "./assets/projects/react-query-preview.png";
 import reduxcrud from "./assets/projects/redux-crud-preview.png";
 import cocktails from "./assets/projects/cocktails-preview.jpg";
 import icygbimg from "./assets/projects/icygbimg.jpg";
+import icygbvideo from "./assets/projects/icygb.mp4";
 
 export const life = {
   name: "Federico Palessi",
@@ -100,6 +101,7 @@ export const projects = [
     description:
       "Complex shop project built with Express, MongoDB and React. It has user authentication as well as many other features such as being able to add products to the cart, delete them, etc. These products can also be sorted by color, size, price... Once the user decides on his favorite sneakers, he will be able to make the payment thanks to the Stripe payment processing platform. The website was styled with Styled-Components and the state was handled by Redux Toolkit. ",
     technologies: "HTML, CSS, Bootstrap, React, Express, Redux Toolkit",
+    live: icygbvideo,
     github: "https://github.com/fpalessi/FRONTEND_ICYGB",
   },
   {
@@ -110,6 +112,5 @@ export const projects = [
     technologies: "HTML, CSS, TailwindCSS, React, Express",
     live: "https://resplendent-entremet-a875e4.netlify.app/",
     github: "https://github.com/fpalessi/FRONTEND_pro-mgmt",
-    // github: "https://github.com/fpalessi/BACKEND_pro-mgmt",
   },
 ];
