@@ -17,7 +17,6 @@ const About = () => {
     reactquery,
     npm,
     nodejs,
-    github,
   } = technologies;
   return (
     <>
