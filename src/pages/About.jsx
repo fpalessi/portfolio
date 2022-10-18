@@ -17,6 +17,7 @@ const About = () => {
     reactquery,
     npm,
     nodejs,
+    github,
   } = technologies;
   return (
     <>
@@ -79,10 +80,14 @@ const About = () => {
           </section>
         </section>
         <section>
-          <h1 className="text-2xl md:text-4xl xl:text-3xl xl:leading-tight font-bold mt-10 underline">
+          <h1 className="text-xl md:text-4xl xl:text-3xl xl:leading-tight font-bold mt-10">
             <a href={Resume} download>
+              Download Curriculum Vitae{" "}
+            </a>{" "}
+            ||
+            <a href="https://github.com/fpalessi" target="_blank">
               {" "}
-              Download Curriculum Vitae
+              visit GitHub
             </a>
           </h1>
         </section>
