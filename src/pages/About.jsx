@@ -3,6 +3,7 @@ import "animate.css";
 import Work from "../components/Work";
 import { technologies, work } from "../data";
 import { education } from "../data";
+import Resume from "../assets/me/Federico-Palessi-CV.pdf";
 
 const About = () => {
   const {
@@ -79,7 +80,10 @@ const About = () => {
         </section>
         <section>
           <h1 className="text-2xl md:text-4xl xl:text-3xl xl:leading-tight font-bold mt-10 underline">
-            <a href="https://www.twitter.com"> Download Curriculum Vitae</a>
+            <a href={Resume} download>
+              {" "}
+              Download Curriculum Vitae
+            </a>
           </h1>
         </section>
       </main>
