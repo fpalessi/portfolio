@@ -99,7 +99,7 @@ export const projects = [
     title: "ICYGB",
     image: icygbimg,
     description:
-      "Complex shop project built with Express, MongoDB and React. It has user authentication as well as many other features such as being able to add products to the cart, delete them, etc. These products can also be sorted by color, size, price... Once the user decides on his favorite sneakers, he will be able to make the payment thanks to the Stripe payment processing platform. The website was styled with Styled-Components and the state was handled by Redux Toolkit. ",
+      "Shop project built with Express, MongoDB and React. It has user authentication as well as many other features such as being able to add products to the cart, delete them, etc. These products can also be sorted by color, size, price... Once the user decides on his favorite sneakers, he will be able to make the payment thanks to the Stripe payment processing platform. The website was styled with Styled-Components and the state was handled by Redux Toolkit. ",
     technologies: "HTML, CSS, Bootstrap, React, Express, Redux Toolkit",
     live: icygbvideo,
     github: "https://github.com/fpalessi/FRONTEND_ICYGB",
