@@ -21,7 +21,6 @@ import icygbvideo from "./assets/projects/icygb.mp4";
 
 export const life = {
   name: "Federico Palessi",
-  shortText: "React Developer",
   img: profile,
 };
 export const education = [

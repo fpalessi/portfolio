@@ -14,10 +14,13 @@ body::-webkit-scrollbar {
   @apply pt-28 xl:pt-28 2xl:pt-44;
 }
 .bg-gradient {
-  @apply bg-gradient-to-bl from-blue-200 to-blue-300;
+  @apply bg-gradient-to-bl from-cyan-400 to-blue-400;
 }
 .text-content {
   @apply text-dark-content;
+}
+.typewritter {
+  @apply text-2xl text-dark-heading md:text-4xl xl:text-3xl xl:leading-tight font-bold mt-2;
 }
 .wave {
   animation-name: wave-animation;

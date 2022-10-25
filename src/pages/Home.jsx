@@ -1,9 +1,10 @@
 import "animate.css";
 import { life } from "../data";
 import reactLogo from "../assets/me/react.svg";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
-  const { name, shortText, img } = life;
+  const { name, img } = life;
   return (
     <main className="container flex flex-col mx-auto max-width section justify-between items-center md:flex md:flex-row ">
       <div className="animate__animated animate__backInLeft ">
@@ -18,8 +19,23 @@ const Home = () => {
         </h2>
         <div className="flex mt-2">
           <h2 className="text-2xl text-dark-heading md:text-4xl xl:text-3xl xl:leading-tight font-bold mt-2">
-            {shortText}
+            <Typewriter
+              options={{ loop: true }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("React Web Developer")
+                  .pauseFor(6000)
+                  .deleteAll()
+                  .typeString("Passion for Perfomance")
+                  .pauseFor(2000)
+                  .deleteChars(10)
+                  .typeString("React")
+                  .pauseFor(2000)
+                  .start();
+              }}
+            />
           </h2>
+
           <span>
             <img
               src={reactLogo}

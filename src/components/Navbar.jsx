@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/me/logo.svg";
+import logoLetter from "../assets/me/Letter.png";
 import "animate.css";
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-10 py-10 md:py-10 md:px-5">
         <div>
           <Link to="/" onClick={handleToggle}>
-            <img className="w-14" src={logo} alt="logo" />
+            <img className="w-16" src={logoLetter} alt="logo" />
           </Link>
         </div>
         <div onClick={handleToggle} className="cursor-pointer">

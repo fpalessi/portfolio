@@ -20,7 +20,7 @@ const About = () => {
   } = technologies;
   return (
     <>
-      <main className="container mx-auto max-width py-5 animate__animated animate__backInDown">
+      <main className="container mx-auto max-width py-5 animate__animated animate__fadeIn">
         <section>
           <h1 className="text-2xl md:text-4xl xl:text-3xl xl:leading-tight font-bold">
             Education
