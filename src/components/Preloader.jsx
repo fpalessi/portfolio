@@ -1,9 +1,9 @@
-import Loader from "./Loader";
+import Spinner from "./Spinner";
 
 const Preloader = (props) => {
   return (
     <div id={props.preload ? "preloader" : "preloader-none"}>
-      <Loader />
+      <Spinner />
     </div>
   );
 };

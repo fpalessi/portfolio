@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setPreload(false);
-    }, 2500);
+    }, 3500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,7 +22,7 @@ function App() {
         {preload ? (
           <Preloader preload={preload} />
         ) : (
-          <div className="test" id={preload ? "no-scroll" : "scroll"}>
+          <div id={preload ? "no-scroll" : "scroll"}>
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
