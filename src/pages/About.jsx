@@ -1,9 +1,9 @@
 import React from "react";
 import "animate.css";
 import Work from "../components/Work";
-import { technologies, work } from "../data";
+import { work } from "../data";
 import { education } from "../data";
-import Resume from "../assets/me/Federico-Palessi-CV.pdf";
+import Resume from "../assets/me/Federico_Palessi_CV.pdf";
 
 const About = () => {
   return (
