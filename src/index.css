@@ -129,10 +129,10 @@ body::-webkit-scrollbar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  top: -68px;
-  right: -69px;
+  top: -70px;
+  right: -65px;
   box-shadow: 0 0 0 0 rgb(97, 218, 251);
-  animation: 3s infinite linear pulse;
+  animation: 2s infinite linear pulse;
 }
 
 @keyframes spin {
@@ -146,15 +146,15 @@ body::-webkit-scrollbar {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 5px rgba(97, 218, 251, 0.4);
+    box-shadow: 0 0 0 0px rgba(97, 218, 251, 0.4);
   }
   30% {
     box-shadow: 0 0 0 25px rgba(97, 218, 251, 0);
   }
   70% {
-    box-shadow: 0 0 0 0px rgba(97, 218, 251, 0);
+    box-shadow: 0 0 0 55px rgba(97, 218, 251, 0);
   }
   100% {
-    box-shadow: 0 0 0 120px rgba(97, 218, 251, 0);
+    box-shadow: 0 0 0 70px rgba(97, 218, 251, 0);
   }
 }

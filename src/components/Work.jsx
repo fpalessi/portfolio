@@ -1,6 +1,6 @@
-const Work = ({ position, company, location, duration }) => {
+const Work = ({ position, location, company, duration, tasks }) => {
   return (
-    <article className="pt-8 border-b-2 border-dark-content pb-5 border-opacity-20">
+    <article className="pt-10 border-b-2 border-dark-content pb-5 border-opacity-20">
       <div className="flex justify-between items-center">
         <h1 className="text-content md:text-lg lg:text-xl">{position}</h1>
       </div>

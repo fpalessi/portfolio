@@ -11,6 +11,7 @@ import tailwind from "./assets/stack/tailwind.png";
 import vscode from "./assets/stack/vscode.png";
 import bootstrap from "./assets/stack/bootstrap.png";
 import github from "./assets/stack/github.png";
+import styledcomponents from "./assets/stack/styled-components.png";
 import weatherApp from "./assets/projects/weather-preview.jpg";
 import promgmt from "./assets/projects/pro-mgmt-preview.png";
 import querycrud from "./assets/projects/react-query-preview.png";
@@ -25,21 +26,28 @@ export const life = {
 };
 export const education = [
   {
-    Position: "React Hooks: The Complete Guide",
-    Location: "Udemy",
+    Position: "React - The Complete Guide (incl Hooks, React Router, Redux)",
+    Location: "Academind, Maximilian Schwarzmüller",
     Duration: "August 2022 - September 2022",
   },
   {
-    Position: "Técnico Superior en Desarrollo de Aplicaciones Web",
-    Location: "Lleida",
+    Position: "React - La Guía Completa: Hooks Context Redux",
+    Location: "Udemy, Juan Pablo de la Torre ",
+    Duration: "August 2022 - September 2022",
+  },
+  {
+    Position: "Grado Superior en Desarrollo de Aplicaciones Web",
+    Location: "Lleida, Ministerio de Educación y Formación Profesional",
     Duration: "Sept 2020 - July 2022",
   },
 ];
 export const work = [
   {
     Position: "Frontend Developer",
-    Company: `Bankoi Software Factory (Vigo)`,
+    Company: "Bankoi Software Factory (Vigo)",
     Duration: "Jan 2022 - Jun 2022",
+    Tasks:
+      "Actualización y mantenimiento de webs de la propia empresa. <br> Implementación de medidas legales RGPD/LSSI.",
   },
 ];
 
@@ -56,6 +64,7 @@ export const technologies = {
   npm: npm,
   github: github,
   nodejs: nodejs,
+  styledcomponents: styledcomponents,
 };
 export const projects = [
   {
@@ -71,43 +80,44 @@ export const projects = [
     title: "Best cocktails",
     image: cocktails,
     description:
-      "Simple small React app styled with react-bootstrap. It uses Axios to fetch data from a cocktails API and React Context API to manage the state. Once the search is over and the user chooses a cocktail, a modal will be displayed with the instructions and ingredients.",
+      "Simple small React app that uses Axios to fetch data from a cocktails API and React Bootstrap in order to style and display a selected drink. Context API was used in order to manage the app state.",
     technologies: "HTML, CSS, Bootstrap, React",
     live: "https://celebrated-quokka-36eaba.netlify.app/",
     github: "https://github.com/fpalessi/best-cocktails",
   },
   {
-    title: "Redux CRUD - Used books",
-    image: reduxcrud,
-    description:
-      "Simple CRUD React app that simulates a store of used books. I used Redux to manage the app state in order to practice with one of the most frequently used state management tool. It uses Axios to make HTTP requests to a fake REST API and some React Hooks that Redux provides such as useSelector or useDispatch. It also has a search bar to filter the books.",
-    technologies: "HTML, CSS, Bootstrap, React, Redux",
-    live: "https://steady-dodol-885d13.netlify.app/",
-    github: "https://github.com/fpalessi/FRONTEND_used-books",
-  },
-  {
     title: "React Query CRUD - Films",
     image: querycrud,
     description:
-      "Simple CRUD React application where a group of friends rate from 1 to 10 the movies they watch. The purpose of this app is none other than to understand and put into practice the React-Query library. It uses Axios to make HTTP requests to a fake REST API (json-server) and some React Hooks that react-query provides such as useQuery or useMutation.",
+      "Simple CRUD React app that simulates a list of films that a group of friends rate from 1 to 10. It uses React-Query for fetching, caching, synchronizing and updating server state.",
     technologies: "HTML, CSS, Bootstrap, React, React-Query",
     live: "https://superb-valkyrie-8dd983.netlify.app/",
     github: "https://github.com/fpalessi/FRONTEND_films",
   },
   {
+    title: "Redux CRUD - Used books",
+    image: reduxcrud,
+    description:
+      "Simple CRUD React app that simulates a store of used books. It uses Redux to manage the app state. It uses Axios to make HTTP requests to a REST API and some hooks that Redux provides such as useSelector or useDispatch.",
+    technologies: "HTML, CSS, Bootstrap, React, Redux",
+    live: "https://steady-dodol-885d13.netlify.app/",
+    github: "https://github.com/fpalessi/FRONTEND_used-books",
+  },
+  {
     title: "ICYGB",
     image: icygbimg,
     description:
-      "Shop project built with Express, MongoDB and React. It has user authentication as well as many other features such as being able to add products to the cart, delete them, etc. These products can also be sorted by color, size, price... Once the user decides on his favorite sneakers, he will be able to make the payment thanks to the Stripe payment processing platform. The website was styled with Styled-Components and the state was handled by Redux Toolkit. ",
+      "Shop app built with Express, MongoDB and React. It has user authentication as well as many other features such as being able to add products to the cart, delete them, sort them by color, size, price,... Finally, he will be able to check out thanks to the Stripe payment processing platform. The website was styled from scratch with Styled-Components and the state was handled with Redux Toolkit. ",
     technologies: "HTML, CSS, Bootstrap, React, Express, Redux Toolkit",
     live: icygbvideo,
     github: "https://github.com/fpalessi/FRONTEND_ICYGB",
   },
+
   {
     title: "pro-mgmt",
     image: promgmt,
     description:
-      "Fully functional app built with Express, MongoDB and React. Once you sign up and confirm your account via email, you can log in and start managing your projects and tasks. It has many functionalities such as adding (editing and deleting) projects, adding new tasks to each of these projects, etc. You can also add collaborators who can mark these tasks as completed.",
+      "Fully functional app built with Express, MongoDB and React. Once you sign up and confirm your account via email, you can log in and start managing your projects and tasks. It has many functionalities such as adding (editing and deleting) projects, adding new tasks to each of these projects, etc. You can also add collaborators who can mark these tasks as completed. App state was globally managed with Context API.",
     technologies: "HTML, CSS, TailwindCSS, React, Express",
     live: "https://resplendent-entremet-a875e4.netlify.app/",
     github: "https://github.com/fpalessi/FRONTEND_pro-mgmt",
