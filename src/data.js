@@ -12,7 +12,7 @@ import vscode from "./assets/stack/vscode.png";
 import bootstrap from "./assets/stack/bootstrap.png";
 import github from "./assets/stack/github.png";
 import styledcomponents from "./assets/stack/styled-components.png";
-import weatherApp from "./assets/projects/weather-preview.jpg";
+import weatherApp from "./assets/projects/weather-app.jpg";
 import promgmt from "./assets/projects/pro-mgmt-preview.png";
 import querycrud from "./assets/projects/react-query-preview.png";
 import reduxcrud from "./assets/projects/redux-crud-preview.png";
@@ -68,13 +68,13 @@ export const technologies = {
 };
 export const projects = [
   {
-    title: "Weather App",
+    title: "React Weather",
     image: weatherApp,
     description:
-      "Simple small React app that uses Axios library in order to fetch data from a weather API. It uses React Context API to manage the app state globally.",
+      "Simple and minimalistic React app that uses Axios in order to fetch the weather forecast from an API. It has autocomplete searchbar and dark mode. In this case data flows from parent to children through props. Styled with Styled-Components. Note: 1M>population",
     technologies: "HTML, CSS, React",
-    live: "https://timely-travesseiro-334ce5.netlify.app/",
-    github: "https://github.com/fpalessi/weather-app",
+    live: "https://sweet-youtiao-18f918.netlify.app",
+    github: "https://github.com/fpalessi/react-weather",
   },
   {
     title: "Best cocktails",
