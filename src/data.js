@@ -10,6 +10,9 @@ import reactquery from "./assets/stack/react-query.png";
 import tailwind from "./assets/stack/tailwind.png";
 import vscode from "./assets/stack/vscode.png";
 import bootstrap from "./assets/stack/bootstrap.png";
+import php from "./assets/stack/php.png";
+import nextjs from "./assets/stack/next-js.png";
+import typescript from "./assets/stack/typescript.png";
 import github from "./assets/stack/github.png";
 import styledcomponents from "./assets/stack/styled-components.png";
 import weatherApp from "./assets/projects/weather-app.jpg";
@@ -17,8 +20,7 @@ import promgmt from "./assets/projects/pro-mgmt-preview.png";
 import querycrud from "./assets/projects/react-query-preview.png";
 import reduxcrud from "./assets/projects/redux-crud-preview.png";
 import cocktails from "./assets/projects/cocktails-preview.jpg";
-import icygbimg from "./assets/projects/icygbimg.jpg";
-import icygbvideo from "./assets/projects/icygb.mp4";
+import fruitcart from "./assets/projects/fruitcart.jpg";
 
 export const life = {
   name: "Federico Palessi",
@@ -43,11 +45,9 @@ export const education = [
 ];
 export const work = [
   {
-    Position: "Frontend Developer",
+    Position: "Web Developer (JS, PHP, HTML, CSS)",
     Company: "Bankoi Software Factory (Vigo)",
     Duration: "Jan 2022 - Jun 2022",
-    Tasks:
-      "Actualización y mantenimiento de webs de la propia empresa. <br> Implementación de medidas legales RGPD/LSSI.",
   },
 ];
 
@@ -65,31 +65,40 @@ export const technologies = {
   github: github,
   nodejs: nodejs,
   styledcomponents: styledcomponents,
+  php: php,
+  typescript: typescript,
+  nextjs: nextjs,
 };
 export const projects = [
   {
     title: "React Weather",
     image: weatherApp,
-    description:
-      "Simple and minimalistic React app that uses Axios in order to fetch the weather forecast from an API. It has autocomplete searchbar and dark mode. In this case data flows from parent to children through props. Styled with Styled-Components. Note: 1M>population",
-    technologies: "HTML, CSS, React",
+    shortDescription:
+      "Small React app that uses Axios in order to fetch the weather forecast from an API.",
+    longDescription:
+      "It includes autocomplete searchbar for cities with 1M > population and dark mode. In this case data flows from parent to children through props. Styled with Styled-Components.",
+    technologies: "HTML, CSS, React, Styled-Components",
     live: "https://sweet-youtiao-18f918.netlify.app",
     github: "https://github.com/fpalessi/react-weather",
   },
   {
     title: "Best cocktails",
     image: cocktails,
-    description:
-      "Simple small React app that uses Axios to fetch data from a cocktails API and React Bootstrap in order to style and display a selected drink. Context API was used in order to manage the app state.",
-    technologies: "HTML, CSS, Bootstrap, React",
+    shortDescription:
+      "Small React app that uses Axios to fetch data from a cocktails API.",
+    longDescription:
+      "It was quickly and easily designed thanks to Bootstrap library. In order to manage application state it was used Context API which provides a way to pass data through the component tree without having to pass props down manually at every level.",
+    technologies: "HTML, CSS, React, Bootstrap",
     live: "https://celebrated-quokka-36eaba.netlify.app/",
     github: "https://github.com/fpalessi/best-cocktails",
   },
   {
     title: "React Query CRUD - Films",
     image: querycrud,
-    description:
-      "Simple CRUD React app that simulates a list of films that a group of friends rate from 1 to 10. It uses React-Query for fetching, caching, synchronizing and updating server state.",
+    shortDescription:
+      "CRUD app that uses React-Query for fetching, caching, synchronizing and updating server state.",
+    longDescription:
+      "It simulates a list of films which a group of friends uses in order to share (add, edit, delete) the last seen films rating them on a scale of one to ten. ",
     technologies: "HTML, CSS, Bootstrap, React, React-Query",
     live: "https://superb-valkyrie-8dd983.netlify.app/",
     github: "https://github.com/fpalessi/FRONTEND_films",
@@ -97,28 +106,33 @@ export const projects = [
   {
     title: "Redux CRUD - Used books",
     image: reduxcrud,
-    description:
-      "Simple CRUD React app that simulates a store of used books. It uses Redux to manage the app state. It uses Axios to make HTTP requests to a REST API and some hooks that Redux provides such as useSelector or useDispatch.",
+    shortDescription:
+      "Simple CRUD React app that uses Redux to manage the app state and Axios to make HTTP requests.",
+    longDescription:
+      "It simulates a store of used books where people add (edit or delete) its old books (title, price and last owner) to a list in order to sell them. Main objective was to practice Redux and some hooks provided from it such as useSelector or useDispatch. It was easily and fast designed with Bootstrap",
     technologies: "HTML, CSS, Bootstrap, React, Redux",
     live: "https://steady-dodol-885d13.netlify.app/",
     github: "https://github.com/fpalessi/FRONTEND_used-books",
   },
   {
-    title: "ICYGB",
-    image: icygbimg,
-    description:
-      "Shop app built with Express, MongoDB and React. It has user authentication as well as many other features such as being able to add products to the cart, delete them, sort them by color, size, price,... Finally, he will be able to check out thanks to the Stripe payment processing platform. The website was styled from scratch with Styled-Components and the state was handled with Redux Toolkit. ",
-    technologies: "HTML, CSS, Bootstrap, React, Express, Redux Toolkit",
-    live: icygbvideo,
-    github: "https://github.com/fpalessi/FRONTEND_ICYGB",
+    title: "Fruit Cart",
+    image: fruitcart,
+    shortDescription: "React & TypeScript shopping fruit cart.",
+    longDescription:
+      "This project was taken as a first contact with TypeScript. A project full of the best typescript practices where you can add and remove fruits to a shopping cart. It also includes custom hooks and Context API.  ",
+    technologies: "HTML, CSS, Bootstrap, React, TypeScript",
+    live: "in process",
+    github: "in process",
   },
 
   {
     title: "pro-mgmt",
     image: promgmt,
-    description:
-      "Fully functional app built with Express, MongoDB and React. Once you sign up and confirm your account via email, you can log in and start managing your projects and tasks. It has many functionalities such as adding (editing and deleting) projects, adding new tasks to each of these projects, etc. You can also add collaborators who can mark these tasks as completed. App state was globally managed with Context API.",
-    technologies: "HTML, CSS, TailwindCSS, React, Express",
+    shortDescription:
+      "Full Stack Application (MongoDB, Express, React, Node) that allows you manage your projects and tasks. It includes user authentication and authorization. ",
+    longDescription:
+      "Once you sign up and confirm your account (email), you can log in and start managing your projects and tasks. It has many functionalities such as adding (editing and deleting) projects, adding new tasks to each of these projects, etc. You can also add collaborators who can mark these tasks as completed. State was globally managed with Context API.",
+    technologies: "HTML, CSS, TailwindCSS, React, Express, MongoDB",
     live: "https://resplendent-entremet-a875e4.netlify.app/",
     github: "https://github.com/fpalessi/FRONTEND_pro-mgmt",
   },

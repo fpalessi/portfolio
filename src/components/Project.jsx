@@ -1,10 +1,26 @@
-const Project = ({ title, image, description, technologies, live, github }) => {
+const Project = ({
+  title,
+  image,
+  shortDescription,
+  longDescription,
+  technologies,
+  live,
+  github,
+}) => {
   return (
     <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300">
-      <img src={image} alt="" loading="lazy" />
-      <div className=" p-4">
-        <h1 className=" font-semibold text-lg pt-1">{title}</h1>
-        <p className="text-content pt-4 font-light">{description}</p>
+      <img
+        src={image}
+        alt=""
+        loading="lazy"
+        style={{ height: "110px", width: "250px", margin: "0px auto" }}
+      />
+      <div className="p-4">
+        <div className="tooltip">
+          <h1 className=" font-semibold text-lg pt-1">{title}</h1>
+          <span className="tooltiptext">{longDescription}</span>
+        </div>
+        <p className="text-content pt-4 font-light">{shortDescription}</p>
         <h3 className="text-dark-heading  font-medium pt-4">
           Tech Stack : <span className="font-light">{technologies}</span>
         </h3>

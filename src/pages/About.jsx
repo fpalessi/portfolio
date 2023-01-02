@@ -4,6 +4,7 @@ import Work from "../components/Work";
 import { work } from "../data";
 import { education } from "../data";
 import Resume from "../assets/me/Federico_Palessi_CV.pdf";
+import github from "../assets/stack/github.png";
 
 const About = () => {
   return (
@@ -43,12 +44,12 @@ const About = () => {
         <section>
           <h1 className="text-xl md:text-4xl xl:text-3xl xl:leading-tight font-bold mt-10">
             <a href={Resume} download>
-              Download Curriculum Vitae{" "}
+              Curriculum Vitae{" "}
             </a>{" "}
             ||
             <a href="https://github.com/fpalessi" target="_blank">
               {" "}
-              visit GitHub
+              GitHub
             </a>
           </h1>
         </section>

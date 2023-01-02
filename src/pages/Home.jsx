@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 const Home = () => {
   const { name, img } = life;
   return (
-    <main className="container flex flex-col mx-auto max-width section justify-between items-center md:flex md:flex-row ">
+    <main className="container flex flex-col mx-auto mb-5 max-width section justify-between items-center md:flex md:flex-row ">
       <div className="animate__animated animate__backInLeft ">
         <h1 className="text-3xl text-dark-heading md:text-4xl xl:text-6xl xl:leading-tight font-bold">
           Hi there!
@@ -35,7 +35,6 @@ const Home = () => {
               }}
             />
           </h2>
-
           <span>
             <img
               src={reactLogo}

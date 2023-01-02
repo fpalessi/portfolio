@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logoLetter from "../assets/me/Letter.png";
+import logoLetter from "../assets/me/favicon.png";
 import "animate.css";
 
 const Navbar = () => {
